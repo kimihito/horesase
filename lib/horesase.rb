@@ -1,5 +1,19 @@
-require "horesase/version"
+# encoding: utf-8
+require 'horesase/version'
+require 'json'
+require 'open-uri'
 
 module Horesase
-  # Your code goes here...
+  class << self
+    HORESASE_URL = 'http://horesase.github.io/horesase-boys/meigens.json'.freeze
+    def random
+      parse_json.sample
+    end
+
+    private
+
+    def parse_json
+      JSON.parse(open(HORESASE_URL).read, symbolize_names: true)
+    end
+  end
 end
