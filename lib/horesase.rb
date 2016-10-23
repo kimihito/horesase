@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'horesase/version'
 require 'json'
 require 'open-uri'
