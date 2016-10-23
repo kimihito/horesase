@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'horesase'
   spec.version       = Horesase::VERSION
   spec.authors       = ['kimihito']
-  spec.email         = ['tatsuro.tamashiro@gmail.com']
+  spec.email         = ['tatsurotamashiro@gmail.com']
 
   spec.summary       = 'horesase meigen gem'
   spec.homepage      = 'https://github.com/kimihito/horesase'
