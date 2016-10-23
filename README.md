@@ -1,8 +1,6 @@
 # Horesase
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/horesase`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[horesa.se](http://horesa.se/) gem. Return meigens.
 
 ## Installation
 
@@ -22,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+# Return random meigen
+Horesase.random
+# => {"id"=>1250, "title"=>"みんなは違うのかー！", "image"=>"image url", "character"=>"洋介(17)", "cid"=>117, "eid"=>1283, "body"=>"あ〜俺だけスタッフ目線\nだからかー！失敬〜！\n\n俺だけスタッフ目線だから\n笑うとこ違うのかー！\n失敬〜！こいつは失敬〜！\n"}
+
+```
+
+
+## TODO
+
+- [ ] Add `Horesase#search`
+- [ ] Add test
 
 ## Development
 
@@ -32,10 +41,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/horesase. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kimihito/horesase. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
