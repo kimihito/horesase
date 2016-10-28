@@ -27,10 +27,22 @@ Horesase.random
 
 ```
 
+```
+# Search meigen
+# default result size is 10
+Horesase.search('俺')
+# => [{:id=>1, :title=>"ドラム", :image=>"http://livedoor.blogimg.jp/jigokuno_misawa/imgs/6/b/6bb141f8.gif", :character=>"KAZ(32)", :cid=>1, :eid=>1, :body=>"この世に存在するドラムは\n\n全て俺が叩く\n"}, ...]
+
+# If you want to change result size, use `limit` argument
+Horesase.search('俺', limit: 20)
+# => [{:id=>1, :title=>"ドラム", :image=>"http://livedoor.blogimg.jp/jigokuno_misawa/imgs/6/b/6bb141f8.gif", :character=>"KAZ(32)", :cid=>1, :eid=>1, :body=>"この世に存在するドラムは\n\n全て俺が叩く\n"}, ...]
+
+```
+
 
 ## TODO
 
-- [ ] Add `Horesase#search`
+- [x] Add `Horesase#search`
 - [ ] Add test
 
 ## Development
